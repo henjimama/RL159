@@ -2,7 +2,7 @@
 const $ = new Env("电视家");
 const notify = $.isNode() ? require('./sendNotify') : '';
 message = ""
-let dsj_header= $.isNode() ? (process.env.dsj_header ? process.env.dsj_header : "") : ($.getdata('dsj_header') ? $.getdata('dsj_header') : "")
+let dsj_header= $.isNode() ? (process.env.dsj_header ? process.env.dsj_header : "") : ($.getdata('dsj_header') ? $.getdata('dsj_header') : "a31335b72f42d44f50a7148fe6f8e724&TmprNU1USXlNMlEzWlRJMU9USmtNbUkzTXpoaFlXRmhZV1kxWXpRd1lqYz18MTYzNjg2NDMzMzQwMTE0ODEyMXxmNGM4OGMwZjY1ZTg2MDgyNDA4MzE3YjIzMDA4NzE3MjJmZjZjZmE5@ 07b307ece03c294c4aa2c323141c4bc6&T0dFMlpXWXpaVEJrTW1Vd1pqWmhObVl5TldFNU1HRmtPREV5WVRkaE1qTT18MTYyNDQyMzU1MzIwMjI3MTI1MHw2OWVhYzllZWEyYzM1NmZlZTljYmRhYjU3NjU0NjdkNDkzYTk0MTQ0@ 3e27bf437dec126bec00d4a43f9fff83&WVRrelpqUTRaR000Tm1VMlpXWTJPRGs0TldJd05XSmhNRGsyWVdJMU5XUT18MTYyNDQyMzcyMTUzMDczOTMxM3wzNzdlZTBmNWIyN2ExYmNjODlhYmIyYzk5YzU4YWEyMWM0NjVmMDk1")
 let dsj_headerArr = []
 let dsj_headers = ""
 

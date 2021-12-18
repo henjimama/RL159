@@ -33,7 +33,7 @@ jobs:
           npm install
       - name: '运行 【tvjia】'
         run: |
-          node Task/tvjia.js
+          node Task/dsj.js
         env:
           #RLURL: ${{ secrets.RLURL }}
           #RLHEADER: ${{ secrets.RLHEADER }}

@@ -90,7 +90,7 @@ async function all() {
             currenttime = parseInt(new Date().getTime() / 1000);//当前时间戳；
             md5str = `is_new=1&amp;session_id=${session_id}&amp;time=${currenttime}&amp;type=${type}&amp;key=NcfVw#l5A!gQEO5@`;
             sign = MD5(md5str).toString().toUpperCase();
-            for (let ci = 0; ci &lt; 15; ci++)
+            for (let ci = 0; ci < 15; ci++)
                 await clickLog();
 
             currenttime = parseInt(new Date().getTime() / 1000)//当前时间戳；

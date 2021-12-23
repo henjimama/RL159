@@ -46,8 +46,8 @@ async function all() {
                     sign = MD5(md5str).toString().toUpperCase();
                     await getQuestionList()
                     //await $.wait(1000);
-                    for (let i = 0; i &lt; uq_idarr.length; i++) {
-                        for (let j = 0; j &lt; answerarr.length; j++) {
+                    for (let i = 0; i < uq_idarr.length; i++) {
+                        for (let j = 0; j < answerarr.length; j++) {
                             currenttime = parseInt(new Date().getTime() / 1000)//当前时间戳；
                             md5str = `answer=${answerarr[j]}&amp;session_id=${session_id}&amp;time=${currenttime}&amp;uq_id=${uq_idarr[i]}&amp;key=NcfVw#l5A!gQEO5@`
                             sign = MD5(md5str).toString().toUpperCase();
@@ -71,7 +71,7 @@ async function all() {
                     }
                 }
         
-                for (task_id = 1; task_id &lt;= 30; task_id++) {
+                for (task_id = 1; task_id <= 30; task_id++) {
                     currenttime = parseInt(new Date().getTime() / 1000)//当前时间戳；
                     md5str = `session_id=${session_id}&amp;task_id=${task_id}&amp;time=${currenttime}&amp;key=NcfVw#l5A!gQEO5@`
                     sign = MD5(md5str).toString().toUpperCase();
@@ -85,7 +85,7 @@ async function all() {
                 }
         
         let typearr = [24, 6, 5, 12, 24, 24, 7, 14, 29];
-        for (index = 1; index &lt;= 9; index++) {
+        for (index = 1; index <= 9; index++) {
             type = typearr[index - 1];
             currenttime = parseInt(new Date().getTime() / 1000);//当前时间戳；
             md5str = `is_new=1&amp;session_id=${session_id}&amp;time=${currenttime}&amp;type=${type}&amp;key=NcfVw#l5A!gQEO5@`;
@@ -243,7 +243,7 @@ function withdraw() {
 
 
 function finishAction(action) {
-    return new Promise((resolve, reject) =&gt; {
+    return new Promise((resolve, reject) => {
         const url = `http://pic.anngudao.com/index/user/${action}`;
         const headers = {
 
@@ -275,7 +275,7 @@ function finishAction(action) {
 
 
 function clickLog() {
-    return new Promise((resolve, reject) =&gt; {
+    return new Promise((resolve, reject) => {
         const url = "http://pic.anngudao.com/index/api/clickLog";
         const headers = {
 
@@ -310,7 +310,7 @@ function clickLog() {
 
 
 function collectActive() {
-    return new Promise((resolve, reject) =&gt; {
+    return new Promise((resolve, reject) => {
         const url = "http://pic.anngudao.com/dati/free/collectActive";
         const headers = {
 
@@ -349,7 +349,7 @@ function collectActive() {
 
 
 function getAnsewr(aindex, uindex) {
-    return new Promise((resolve, reject) =&gt; {
+    return new Promise((resolve, reject) => {
         const url = "http://pic.anngudao.com/dati/index/getAnswer";
         const headers = {
 
@@ -361,7 +361,7 @@ function getAnsewr(aindex, uindex) {
             body: body
         };
 
-        $.post(request, async (error, response, data) =&gt; {
+        $.post(request, async (error, response, data) => {
             try {
                 if (error) {
                     $.log('请求失败');
@@ -395,7 +395,7 @@ function getAnsewr(aindex, uindex) {
 
 
 function getQuestionList() {
-    return new Promise((resolve, reject) =&gt; {
+    return new Promise((resolve, reject) => {
         const url = "http://pic.anngudao.com/dati/index/getQuestionList";
         const headers = {
 
@@ -407,7 +407,7 @@ function getQuestionList() {
             body: body
         };
 
-        $.post(request, async (error, response, data) =&gt; {
+        $.post(request, async (error, response, data) => {
             try {
                 if (error) {
                     $.log('请求失败');
@@ -417,7 +417,7 @@ function getQuestionList() {
                     result = JSON.parse(data);
                     let temp = "";
                     uq_idarr = [];
-                    for (let i = 0; i &lt; result.data.question_list.length; i++) {
+                    for (let i = 0; i < result.data.question_list.length; i++) {
                         uq_idarr.push(result.data.question_list[i].uq_id);
                         temp += result.data.question_list[i].uq_id;
                         temp += " ";
@@ -436,7 +436,7 @@ function getQuestionList() {
 
 
 function getTaskAward() {
-    return new Promise((resolve, reject) =&gt; {
+    return new Promise((resolve, reject) => {
         const url = "http://pic.anngudao.com/dati/task/getTaskAward";
         const headers = {
 
@@ -478,7 +478,7 @@ function getTaskAward() {
 
 
 function login() {
-    return new Promise((resolve, reject) =&gt; {
+    return new Promise((resolve, reject) => {
         const url = "http://pic.anngudao.com/index/user/login";
         const headers = {
             "App-Refer": "2"
@@ -520,7 +520,7 @@ function login() {
 
 
 function doubleReward() {
-    return new Promise((resolve, reject) =&gt; {
+    return new Promise((resolve, reject) => {
         const url = "http://pic.anngudao.com/index/user/doubleReward";
         const headers = {
         };
@@ -569,8 +569,8 @@ function Env(t, e) {
                 : t;
             let s = this.get;
             return "POST" === e &amp;&amp; (s = this.post),
-                new Promise((e, i) =&gt; {
-                    s.call(this, t, (t, s, r) =&gt; {
+                new Promise((e, i) => {
+                    s.call(this, t, (t, s, r) => {
                         t ? i(t) : e(s)
                     })
                 })
@@ -639,14 +639,14 @@ function Env(t, e) {
             }
         }
         getScript(t) {
-            return new Promise(e =&gt; {
+            return new Promise(e => {
                 this.get({
                     url: t
-                }, (t, s, i) =&gt; e(i))
+                }, (t, s, i) => e(i))
             })
         }
         runScript(t, e) {
-            return new Promise(s =&gt; {
+            return new Promise(s => {
                 let i = this.getdata("@chavy_boxjs_userCfgs.httpapi");
                 i = i ? i.replace(/\n/g, "").trim() : i;
                 let r = this.getdata("@chavy_boxjs_userCfgs.httpapi_timeout");
@@ -665,8 +665,8 @@ function Env(t, e) {
                             Accept: "*/*"
                         }
                     };
-                this.post(a, (t, e, i) =&gt; s(i))
-            }).catch(t =&gt; this.logErr(t))
+                this.post(a, (t, e, i) => s(i))
+            }).catch(t => this.logErr(t))
         }
         loaddata() {
             if (!this.isNode())
@@ -757,16 +757,16 @@ function Env(t, e) {
                 this.ckjar = this.ckjar ? this.ckjar : new this.cktough.CookieJar,
                 t &amp;&amp; (t.headers = t.headers ? t.headers : {}, void 0 === t.headers.Cookie &amp;&amp; void 0 === t.cookieJar &amp;&amp; (t.cookieJar = this.ckjar))
         }
-        get(t, e = (() =&gt; { })) {
+        get(t, e = (() => { })) {
             t.headers &amp;&amp; (delete t.headers["Content-Type"], delete t.headers["Content-Length"]),
                 this.isSurge() || this.isLoon() ? (this.isSurge() &amp;&amp; this.isNeedRewrite &amp;&amp; (t.headers = t.headers || {}, Object.assign(t.headers, {
                     "X-Surge-Skip-Scripting": !1
-                })), $httpClient.get(t, (t, s, i) =&gt; {
+                })), $httpClient.get(t, (t, s, i) => {
                     !t &amp;&amp; s &amp;&amp; (s.body = i, s.statusCode = s.status),
                         e(t, s, i)
                 })) : this.isQuanX() ? (this.isNeedRewrite &amp;&amp; (t.opts = t.opts || {}, Object.assign(t.opts, {
                     hints: !1
-                })), $task.fetch(t).then(t =&gt; {
+                })), $task.fetch(t).then(t => {
                     const {
                         statusCode: s,
                         statusCode: i,
@@ -779,7 +779,7 @@ function Env(t, e) {
                         headers: r,
                         body: o
                     }, o)
-                }, t =&gt; e(t))) : this.isNode() &amp;&amp; (this.initGotEnv(t), this.got(t).on("redirect", (t, e) =&gt; {
+                }, t => e(t))) : this.isNode() &amp;&amp; (this.initGotEnv(t), this.got(t).on("redirect", (t, e) =&gt; {
                     try {
                         if (t.headers["set-cookie"]) {
                             const s = t.headers["set-cookie"].map(this.cktough.Cookie.parse).toString();
@@ -789,7 +789,7 @@ function Env(t, e) {
                     } catch (t) {
                         this.logErr(t)
                     }
-                }).then(t =&gt; {
+                }).then(t => {
                     const {
                         statusCode: s,
                         statusCode: i,
@@ -802,7 +802,7 @@ function Env(t, e) {
                         headers: r,
                         body: o
                     }, o)
-                }, t =&gt; {
+                }, t => {
                     const {
                         message: s,
                         response: i
@@ -810,7 +810,7 @@ function Env(t, e) {
                     e(s, i, i &amp;&amp; i.body)
                 }))
         }
-        post(t, e = (() =&gt; { })) {
+        post(t, e = (() => { })) {
             if (t.body &amp;&amp; t.headers &amp;&amp; !t.headers["Content-Type"] &amp;&amp; (t.headers["Content-Type"] = "application/x-www-form-urlencoded"), t.headers &amp;&amp; delete t.headers["Content-Length"], this.isSurge() || this.isLoon())
                 this.isSurge() &amp;&amp; this.isNeedRewrite &amp;&amp; (t.headers = t.headers || {}, Object.assign(t.headers, {
                     "X-Surge-Skip-Scripting": !1
@@ -834,14 +834,14 @@ function Env(t, e) {
                         headers: r,
                         body: o
                     }, o)
-                }, t =&gt; e(t));
+                }, t => e(t));
             else if (this.isNode()) {
                 this.initGotEnv(t);
                 const {
                     url: s,
                     ...i
                 } = t;
-                this.got.post(s, i).then(t =&gt; {
+                this.got.post(s, i).then(t => {
                     const {
                         statusCode: s,
                         statusCode: i,
@@ -854,7 +854,7 @@ function Env(t, e) {
                         headers: r,
                         body: o
                     }, o)
-                }, t =&gt; {
+                }, t => {
                     const {
                         message: s,
                         response: i
@@ -879,7 +879,7 @@ function Env(t, e) {
             return t
         }
         msg(e = t, s = "", i = "", r) {
-            const o = t =&gt; {
+            const o = t => {
                 if (!t)
                     return t;
                 if ("string" == typeof t)
@@ -932,7 +932,7 @@ function Env(t, e) {
             s ? this.log("", `\u2757\ufe0f${this.name}, \u9519\u8bef!`, t.stack) : this.log("", `\u2757\ufe0f${this.name}, \u9519\u8bef!`, t)
         }
         wait(t) {
-            return new Promise(e =&gt; setTimeout(e, t))
+            return new Promise(e => setTimeout(e, t))
         }
         done(t = {}) {
             const e = (new Date).getTime(),

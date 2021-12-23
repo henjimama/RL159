@@ -113,7 +113,7 @@ async function all() {
 
 
         type_idarr = [101, 102, 103, 301]
-        for (let ti = 0; ti &lt; type_idarr.length; ti++) {
+        for (let ti = 0; ti < type_idarr.length; ti++) {
             type_id = type_idarr[ti];
             currenttime = parseInt(new Date().getTime() / 1000)//当前时间戳；
             md5str = `pay_type=2&amp;session_id=${session_id}&amp;time=${currenttime}&amp;type_id=${type_id}&amp;key=NcfVw#l5A!gQEO5@`
@@ -138,7 +138,7 @@ async function all() {
 
 
 function getRedluckyMoney() {
-    return new Promise((resolve, reject) =&gt; {
+    return new Promise((resolve, reject) => {
         const url = "http://pic.anngudao.com/index/money/getRedluckyMoney";
         const headers = {
         };
@@ -149,7 +149,7 @@ function getRedluckyMoney() {
             body: body
         };
 
-        $.post(request, async (error, response, data) =&gt; {
+        $.post(request, async (error, response, data) => {
             try {
                 if (error) {
                     $.log('请求失败');
@@ -169,7 +169,7 @@ function getRedluckyMoney() {
 
 
 function withdrawThirdApply() {
-    return new Promise((resolve, reject) =&gt; {
+    return new Promise((resolve, reject) => {
         const url = "http://pic.anngudao.com/index/money/withdrawThirdApply";
         const headers = {
         };
@@ -180,7 +180,7 @@ function withdrawThirdApply() {
             body: body
         };
 
-        $.post(request, async (error, response, data) =&gt; {
+        $.post(request, async (error, response, data) => {
             try {
                 if (error) {
                     $.log('请求失败');
@@ -213,7 +213,7 @@ function withdrawThirdApply() {
 
 
 function withdraw() {
-    return new Promise((resolve, reject) =&gt; {
+    return new Promise((resolve, reject) => {
         const url = "http://pic.anngudao.com/index/money/withdraw";
         const headers = {
         };
@@ -224,7 +224,7 @@ function withdraw() {
             body: body
         };
 
-        $.post(request, async (error, response, data) =&gt; {
+        $.post(request, async (error, response, data) => {
             try {
                 if (error) {
                     $.log('请求失败');
@@ -255,7 +255,7 @@ function finishAction(action) {
             body: body
         };
 
-        $.post(request, async (error, response, data) =&gt; {
+        $.post(request, async (error, response, data) => {
             try {
                 if (error) {
                     $.log('请求失败');
@@ -287,7 +287,7 @@ function clickLog() {
             body: body
         };
 
-        $.post(request, async (error, response, data) =&gt; {
+        $.post(request, async (error, response, data) => {
             try {
                 if (error) {
                     $.log('请求失败');
@@ -531,7 +531,7 @@ function doubleReward() {
             body: body
         };
 
-        $.post(request, async (error, response, data) =&gt; {
+        $.post(request, async (error, response, data) => {
             try {
                 if (error) {
                     $.log('请求失败');

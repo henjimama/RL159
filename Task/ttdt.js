@@ -368,7 +368,7 @@ function getAnsewr(aindex, uindex) {
                 }
                 else {
                     result = JSON.parse(data);
-                    if (result.result == 1 &amp;&amp; result.data.res_code == 1) {
+                    if (result.result == 1 && result.data.res_code == 1) {
                         $.log(`第${uindex + 1}题回答:正确`)
                         pl_id = result.data.pl_id;
                         resolve(true);

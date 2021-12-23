@@ -709,7 +709,7 @@ function Env(t, e) {
             return r
         }
         lodash_set(t, e, s) {
-            return Object(t) !== t ? t : (Array.isArray(e) || (e = e.toString().match(/[^.[\]]+/g) || []), e.slice(0, -1).reduce((t, s, i) =&gt; Object(t[s]) === t[s] ? t[s] : t[s] = Math.abs(e[i + 1]) &gt;&gt; 0 == +e[i + 1] ? [] : {}, t)[e[e.length - 1]] = s, t)
+            return Object(t) !== t ? t : (Array.isArray(e) || (e = e.toString().match(/[^.[\]]+/g) || []), e.slice(0, -1).reduce((t, s, i) =&gt; Object(t[s]) === t[s] ? t[s] : t[s] = Math.abs(e[i + 1]) >> 0 == +e[i + 1] ? [] : {}, t)[e[e.length - 1]] = s, t)
         }
         getdata(t) {
             let e = this.getval(t);
@@ -746,10 +746,10 @@ function Env(t, e) {
             return s
         }
         getval(t) {
-            return this.isSurge() || this.isLoon() ? $persistentStore.read(t) : this.isQuanX() ? $prefs.valueForKey(t) : this.isNode() ? (this.data = this.loaddata(), this.data[t]) : this.data &amp;&amp; this.data[t] || null
+            return this.isSurge() || this.isLoon() ? $persistentStore.read(t) : this.isQuanX() ? $prefs.valueForKey(t) : this.isNode() ? (this.data = this.loaddata(), this.data[t]) : this.data && this.data[t] || null
         }
         setval(t, e) {
-            return this.isSurge() || this.isLoon() ? $persistentStore.write(t, e) : this.isQuanX() ? $prefs.setValueForKey(t, e) : this.isNode() ? (this.data = this.loaddata(), this.data[e] = t, this.writedata(), !0) : this.data &amp;&amp; this.data[e] || null
+            return this.isSurge() || this.isLoon() ? $persistentStore.write(t, e) : this.isQuanX() ? $prefs.setValueForKey(t, e) : this.isNode() ? (this.data = this.loaddata(), this.data[e] = t, this.writedata(), !0) : this.data && this.data[e] || null
         }
         initGotEnv(t) {
             this.got = this.got ? this.got : require("got"),

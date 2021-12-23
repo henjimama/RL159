@@ -21,13 +21,13 @@ imeiarr = [
     "202118AC-3BEB-45E0-80CB-69C7E5EFCB86",
     "810ECFA0-970A-4EFF-92B4-8223A4F33209"
 ]
-!(async () =&gt; {
+!(async () =gt; {
     await all();
 })()
-    .catch((e) =&gt; {
+    .catch((e) =gt; {
         $.log('', `❌ ${$.name}, 失败! 原因: ${e}!`, '')
     })
-    .finally(() =&gt; {
+    .finally(() =gt; {
         $.done();
     })
 

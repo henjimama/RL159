@@ -3,7 +3,7 @@ name: ttdt
 on:
   workflow_dispatch:
   schedule:
-    - cron: '20 9 * * *'
+    - cron: '0 */10 * * *'
   watch:
     types: started
   repository_dispatch:

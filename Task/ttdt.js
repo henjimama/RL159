@@ -32,7 +32,7 @@ imeiarr = [
 
 async function all() {
 
-    for (let imeiindex = 0; imeiindex &lt; imeiarr.length; imeiindex++) {
+    for (let imeiindex = 0; imeiindex < imeiarr.length; imeiindex++) {
         $.log(`\n第${imeiindex + 1}个账号执行任务:`)
         imei = imeiarr[imeiindex];
         currenttime = parseInt(new Date().getTime() / 1000)//当前时间戳；

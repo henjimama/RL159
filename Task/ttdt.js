@@ -322,7 +322,7 @@ function collectActive() {
             body: body
         };
 
-        $.post(request, async (error, response, data) =&gt; {
+        $.post(request, async (error, response, data) => {
             try {
                 if (error) {
                     $.log('请求失败');

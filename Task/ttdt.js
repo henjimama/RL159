@@ -933,10 +933,10 @@ function Env(t, e) {
         }
         wait(t) {
             return new Promise(e => setTimeout(e, t))
-        //}
+        }
         done(t = {}) {
-            const e = (new Date).getTime(),
-                s = (e - this.startTime) / 1e3;
+            //const e = (new Date).getTime(),
+                //s = (e - this.startTime) / 1e3;
             this.log("", `${this.name}\u811a\u672c, \u6267\u884c\u7ed3\u675f! \u7528\u65f6${s}\u79d2`),
                 this.log(),
                 (this.isSurge() || this.isQuanX() || this.isLoon()) && $done(t)

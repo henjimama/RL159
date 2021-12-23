@@ -3,7 +3,7 @@ const { timeStamp } = require('console');
 const { MD5 } = require('crypto-js');
 const $ = Env(jobname)
 //var sd = require('silly-datetime');
-let articlebody = require("../JSON/Youth_common.json");
+//let articlebody = require("../JSON/Youth_common.json");
 let currenttime;
 let md5str;
 let sign;

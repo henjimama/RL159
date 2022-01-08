@@ -60,7 +60,7 @@ module.exports = {
     "favIconColor": "grey",
     "datas": [{
       "key": "tqyburl",
-      "val": "http://coin.makingmoney.cn:8088/task/coin?guid=UUID-40FB27FA-2D8D-4EE0-9D23-9512CE17EC8F&ver=1.3.0&systemver=15.0.1&bid=com.swx.weather.app&mt=1&sw=375&sh=812&device=iPhone&idiom=0&chl=AppStore&language=zh-Hans-CN&locale=CN&zone=Asia%2FShanghai&timestamp=1641641964&idfv=0611C5C0-13C1-41E0-81D8-8785B2F92EB9&sign=6fc606cb3c41607221ec7385cc7879d5"
+      "val": "http://coin.makingmoney.cn:8088/task/coin?guid=UUID-40FB27FA-2D8D-4EE0-9D23-9512CE17EC8F&ver=1.3.0&systemver=15.0.1&bid=com.swx.weather.app&mt=1&sw=375&sh=812&device=iPhone&idiom=0&chl=AppStore&language=zh-Hans-CN&locale=CN&zone=Asia%2FShanghai&timestamp=1641642444&idfv=0611C5C0-13C1-41E0-81D8-8785B2F92EB9&sign=2449733a226420dafc81db291c8729d3"
     }, {
       "key": "tqyburl2",
       "val": ""

@@ -34,7 +34,7 @@ jobs:
           npm install
       - name: '运行 【文章视频】'
         run: |
-          node Task/zqkd_read.js
+          node zqkd_read.js
         env:
           KKDHEADER: ${{ secrets.KKDHEADER }}
           KKDCOOKIE: ${{ secrets.KKDCOOKIE }}

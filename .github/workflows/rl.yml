@@ -3,7 +3,7 @@ name: rl
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/25 * * * *'
+    - cron: '*/35 * * * *'
   watch:
     types: started
   repository_dispatch:

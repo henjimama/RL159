@@ -1,1 +1,1 @@
-深圳阿里云 = vmess, 120.79.77.54, 80, username= 密码, tls=false, ws=true, ws-path=/, sni=pgdt.gtimg.cn, ws-headers=Host: dm.toutiao.com, skip-cert-verify=0, tfo=false, udp-relay=true, vmess-aead=true
+深圳阿里云 = vmess, 120.79.77.54, 80, username= 密码, tls=false, ws=true, ws-path=/, sni=dm.toutiao.com, ws-headers=Host: dm.toutiao.com, skip-cert-verify=0, tfo=false, udp-relay=true, vmess-aead=true

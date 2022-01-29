@@ -1,0 +1,1 @@
+🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶LeaseWeb(SFO12)数据中心 10 = vmess, usa-sanfrancisco.lvuft.com, 443, username=aba50dd4-5484-3b05-b14a-4661caf862d5, tls=true, tls13=false, ws=true, ws-path=/ws, sni=usa-sanfrancisco.lvuft.com, ws-headers=Host:usa-sanfrancisco.lvuft.com, skip-cert-verify=0, tfo=false, udp-relay=true

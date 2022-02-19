@@ -1,1 +1,0 @@
-上海阿里云 = vmess, 120.79.77.54, 80, username= 5ea1fd35-062f-4302-f6cf-d92d0cc1febe, tls=false, ws=true, ws-path=/, sni=dm.toutiao.com, ws-headers=Host:dm.toutiao.com, skip-cert-verify=0, tfo=false, udp-relay=true, vmess-aead=true

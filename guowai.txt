@@ -1,1 +1,0 @@
-首尔-8080-amd------------TG: https://t.me/xoaoa = vmess, h.xxyu.xyz, 8080, method=aes-128-gcm, password=ce6de3ae-9ee6-49c0-ba5c-59a7ac795cc3, obfs=ws, obfs-host=woah.wasu.cn, obfs-uri=/, fast-open=false, udp-relay=false, aead=true

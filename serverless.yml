@@ -41,36 +41,7 @@ inputs:
   environment:
     variables: # 根据自己的需要修改
       Ray_BiliBiliCookies__1: 
-b_ut=5;
 
-i-wanna-go-back=-1;
-
-innersign=0;
-
-DedeUserID=911141;
-
-DedeUserID__ckMd5=2d7f4187281cf868;
-
-SESSDATA=cba124b0%2C1665119060%2C8575a*41;
-
-bili_jct=5c0019b2ff7cb7ce330ebff95c14af29;
-
-buvid_fp=cd94eaef8dd32b8b28f8bfcced6aaecb;
-
-buvid_fp_plain=undefined;
-
-fingerprint=cd94eaef8dd32b8b28f8bfcced6aaecb;
-
-sid=5hi3oueu;
-
-LIVE_BUVID=AUTO5416495669666055;
-
-buvid4=C6EE8490-9472-B8FC-E091-157E741E6DCF54609-122041013-/HVPtVO1bZ8KzGlUyp4uzA%3D%3D;
-
-_uuid=58F2FB9C-A4EA-1ADE-A1093-697EB42CA210A53763infoc;
-
-b_lsid=D110AC1F9_18011DA311D;
-
-buvid3=A5FA113D-4532-8537-7AE8-7CD8FF48BF1D49557infoc;
+innersign=0; b_ut=5; i-wanna-go-back=-1; DedeUserID=911141; DedeUserID__ckMd5=2d7f4187281cf868; SESSDATA=8d5b316d,1665121770,8fc07*41; bili_jct=a06b92c0fc64338da471f936a45c5a47; buvid_fp=03a511b16edebede1b1d5035558cafbd; buvid_fp_plain=undefined; fingerprint=03a511b16edebede1b1d5035558cafbd; sid=k65uqodq; LIVE_BUVID=AUTO4016495696713279; buvid4=3ADD1F6A-3FDC-DE91-EBC0-C1D01FCEFEE362472-122041013-/HVPtVO1bZ8KzGlUyp4uzA==; _uuid=6A68110B5-F13E-B753-715E-2573CCB1E4E161852infoc; b_lsid=AB42A46D_18012038392; buvid3=763ED7DD-CCCC-2563-97F9-4DDDA3E0CD3D59189infoc
 
  # cookie，必填

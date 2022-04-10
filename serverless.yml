@@ -40,4 +40,37 @@ inputs:
           argument: UnfollowBatched
   environment:
     variables: # 根据自己的需要修改
-      Ray_BiliBiliCookies__1: 123 # cookie，必填
+      Ray_BiliBiliCookies__1: 
+b_ut=5;
+
+i-wanna-go-back=-1;
+
+innersign=0;
+
+DedeUserID=911141;
+
+DedeUserID__ckMd5=2d7f4187281cf868;
+
+SESSDATA=cba124b0%2C1665119060%2C8575a*41;
+
+bili_jct=5c0019b2ff7cb7ce330ebff95c14af29;
+
+buvid_fp=cd94eaef8dd32b8b28f8bfcced6aaecb;
+
+buvid_fp_plain=undefined;
+
+fingerprint=cd94eaef8dd32b8b28f8bfcced6aaecb;
+
+sid=5hi3oueu;
+
+LIVE_BUVID=AUTO5416495669666055;
+
+buvid4=C6EE8490-9472-B8FC-E091-157E741E6DCF54609-122041013-/HVPtVO1bZ8KzGlUyp4uzA%3D%3D;
+
+_uuid=58F2FB9C-A4EA-1ADE-A1093-697EB42CA210A53763infoc;
+
+b_lsid=D110AC1F9_18011DA311D;
+
+buvid3=A5FA113D-4532-8537-7AE8-7CD8FF48BF1D49557infoc;
+
+ # cookie，必填
